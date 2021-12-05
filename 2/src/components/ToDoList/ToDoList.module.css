@@ -1,0 +1,12 @@
+.toDoList {
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgb(139, 108, 108);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}

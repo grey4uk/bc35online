@@ -1,0 +1,65 @@
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: rgb(241, 159, 127);
+
+  & > .label {
+    margin-bottom: 10px;
+  }
+}
+
+.labelWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -10px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+
+  &.labelRadio {
+    width: 60px;
+    text-align: center;
+    background-color: #ffffff20;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  input:checked + & {
+    background-color: #d1f08a80;
+  }
+}
+
+.radio,
+.checkbox {
+  composes: visuallyHidden;
+}
+
+.checkbox {
+  width: 45%;
+}
+
+.btn {
+  background-color: green;
+}
